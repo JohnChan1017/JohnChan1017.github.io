@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>访问父节点parentNode | 外星人的秘密基地</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">访问父节点parentNode</h1><a id="logo" href="/.">外星人的秘密基地</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Start</i></a><a href="/archives/"><i class="fa fa-archive"> Archiv</i></a><a href="/about/"><i class="fa fa-user"> Über</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">访问父节点parentNode</h1><div class="post-meta">Jan 20, 2018</div><div class="post-content"><h1 id="访问父节点parentNode"><a href="#访问父节点parentNode" class="headerlink" title="访问父节点parentNode"></a>访问父节点parentNode</h1><p><strong>获取指定节点的父节点</strong></p>
+<p><strong>语法：</strong></p>
+<p><code>elementNode.parentNode</code></p>
+<blockquote>
+<p>注意:父节点只能有一个。</p>
+</blockquote>
+<p>看看下面的例子,获取 P 节点的父节点，代码如下:</p>
+<pre><code>&lt;div id=&quot;text&quot;&gt;
+  &lt;p id=&quot;con&quot;&gt; parentNode 获取指点节点的父节点&lt;/p&gt;
+&lt;/div&gt; 
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var mynode= document.getElementById(&quot;con&quot;);
+  document.write(mynode.parentNode.nodeName);
+&lt;/script&gt;
+</code></pre><p>运行结果:</p>
+<pre><code>parentNode 获取指点节点的父节点
+DIV
+</code></pre><p>访问祖节点:</p>
+<pre><code>elementNode.parentNode.parentNode
+</code></pre><p>看看下面的代码:</p>
+<pre><code>&lt;div id=&quot;text&quot;&gt;  
+  &lt;p&gt;
+    parentNode      
+    &lt;span id=&quot;con&quot;&gt; 获取指点节点的父节点&lt;/span&gt;
+  &lt;/p&gt;
+&lt;/div&gt; 
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var mynode= document.getElementById(&quot;con&quot;);
+  document.write(mynode.parentNode.parentNode.nodeName);
+&lt;/script&gt;
+</code></pre><p>运行结果:</p>
+<pre><code>parentNode获取指点节点的父节点
+DIV
+</code></pre><p>注意: 浏览器兼容问题，chrome、firefox等浏览器标签之间的空白也算是一个文本节点。</p>
+<p>资料来源于(imooc.com)</p>
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2018/01/20/访问子节点childNodes/">访问子节点childNodes</a><a class="next" href="/2018/01/20/访问子节点的第一和最后项/">访问子节点的第一和最后项</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://yoursite.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Kategorien</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Letzte</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/01/20/控制类名(className属性)/">控制类名(className属性)</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/20/访问子节点childNodes/">访问子节点childNodes</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/20/访问父节点parentNode/">访问父节点parentNode</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/20/访问子节点的第一和最后项/">访问子节点的第一和最后项</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/20/hello-world - 副本/">Waaa</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/20/新建文本文档/">alien</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/20/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Blogroll</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">外星人的秘密基地.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
